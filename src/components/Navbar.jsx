@@ -64,7 +64,8 @@ export default function Navbar() {
       <div className='brand'>
         <h2>Samuel Díaz</h2>
         <p className='muted'>Full Stack Developer</p>
-        <p>Construyo cosas para la web</p>
+        <p>Creo experiencias digitales accesibles con</p>
+        <p>píxeles perfectos para la web.</p>
       </div>
 
       <nav className='nav-links'>

@@ -11,36 +11,34 @@ const experiences = [
     companyUrl: 'https://example.com',
     period: 'Jun 2024 - Ago 2025',
     description: [
-      'Diseño y desarrollo de un portal de autoservicio (SSP) orientado a la gestión interna de personal. Creación de una aplicación embebida en iframe para distintos departamentos, que permite la visualización y personalización de horarios, asignación de actividades, reserva de turnos y otras acciones que optimizan el control de personal. Diseño e implementación del flujo de datos desde múltiples fuentes mediante un proveedor de tokens y RxJs, garantizando una comunicación eficiente y segura. Servicio personalizado para gestión de popups y tooltips. Rendimiento mejorado con pipes y directivas personalizadas, reduciendo enlaces y suscripciones observables.  Desarrollé herramientas de gestión de datos y entornos de prueba, garantizando la estabilidad y escalabilidad del sistema.',
+      'Diseñé y desarrollé un portal de autoservicio (SSP) para la gestión interna de personal, integrado mediante iframe. Implementé visualización y personalización de horarios, asignación de actividades y reservas de turnos, optimizando el control de personal. Desarrollé flujos de datos dinámicos con RxJS y un proveedor de tokens para comunicación segura, junto con servicios personalizados (popups, tooltips) y optimización de rendimiento mediante pipes y directivas personalizadas.',
     ]
   },
   {
     role: 'Desarrollador Full Sack, Tester',
     company: 'Tracklog',
     companyUrl: 'https://example.com',
-    period: 'Enero 2022 - Presente',
+    period: 'Ene 2020 - Dic 2023',
     description: [
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
+      'Diseñé e implementé soluciones web de alto rendimiento, enfocadas en optimización de datos de prueba y eficiencia del sistema. Desarrollé interfaces responsivas con HTML, SASS, Java (Spring Boot) y Angular, integrando APIs RESTful en ASP.NET y C# para lograr una arquitectura full stack escalable y modular. Implementé procesamiento en tiempo real con Apache Kafka y generación de datos sintéticos con GenRocket. Apliqué pruebas automatizadas, validación funcional y buenas prácticas de seguridad (prevención de inyección SQL y XSS) para garantizar calidad, estabilidad y cumplimiento técnico.',
     ]
   },
   {
-    role: 'Frontend Developer',
-    company: 'Tech Company',
+    role: 'Administrador de Bases de Datos',
+    company: 'Tracklog',
     companyUrl: 'https://example.com',
-    period: 'Enero 2022 - Presente',
+    period: 'Sept 2017 - Dic 2019',
     description: [
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
+      'Diseñé, implementé y optimicé bases de datos SQL Server, asegurando integridad, normalización y alto rendimiento mediante query tuning, indexación y ajustes de configuración. Desarrollé herramientas de gestión de datos y entornos de prueba para garantizar estabilidad, escalabilidad y calidad. Implementé estrategias de backup & restore, gestioné usuarios, permisos y políticas de seguridad, y apliqué monitoreo proactivo y mantenimiento preventivo, reduciendo tiempos de inactividad y protegiendo datos sensibles. Colaboré con IT para mejorar la infraestructura y resolver incidencias de manera ágil.',
     ]
   },
   {
-    role: 'Web Designer',
-    company: 'Creative Studio',
+    role: 'Coordinador de Proyectos',
+    company: 'Sider Perú',
     companyUrl: 'https://example.com',
-    period: 'Junio 2020 - Diciembre 2021',
+    period: 'Mar 2016 - Sept 2017',
     description: [
-      'Diseñé experiencias visuales atractivas.',
-      'Implementé animaciones y microinteracciones.',
-      'Trabajé con clientes internacionales.'
+      'Fortalecí la alianza entre escuelas públicas y SiderPerú. Planifiqué, ejecuté y di seguimiento a iniciativas para generar impacto comunitario, alineando áreas funcionales y gestionando equipos de trabajo. Elaboré y entregué informes financieros y KPIs, y supervisé el desarrollo de proyectos educativos con alumnos del Technical School de SiderPerú.',
     ]
   }
 ]
@@ -54,20 +52,26 @@ export default function Experience() {
       <div className="experience-list">
         {experiences.map((exp, index) => (
           <div key={index} className="experience-item">
-            <div className="experience-header">
+            <div className="experience-date">
+            <p className="experience-period">{exp.period}</p>
+            </div>
+            <div className="experience-content">
+              <div className="experience-header">
               <h3>
                 {exp.role}{' '}
                 <span>· <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer">{exp.company}</a></span>
               </h3>
-              <p className="experience-period">{exp.period}</p>
+              
             </div>
             <p className="experience-description">{exp.description}</p>
+            </div>
+            
           </div>
         ))}
       </div>
 
       <div className="cv-button-wrapper">
-        <a href="/cv.pdf" download className="cv-button">Ver Resume completo</a>
+        <a href="/src/assets/files/SamuelDiazResume.pdf" download className="cv-button">Ver Resume completo</a>
       </div>
     </section>
   )

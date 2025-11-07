@@ -27,10 +27,11 @@ export default function Hero() {
     return (
         <section id="hero" className="hero">
           <div className="hero-content">
-            <p className="eyebrow">I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</p>
-            <p className="eyebrow">Currently, I'm a Senior Front-End Engineer at <spam className="group-hover">Klaviyo</spam>, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</p>
-            <p className="eyebrow">In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.</p>
-            <p className="eyebrow">In my spare time, I’m usually climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds.</p>
+            <p className="eyebrow">Soy <spam className="group-hover">Desarrollador Full Stack</spam>, <spam className="group-hover">Administrador de Bases de Datos (DBA)</spam> e <spam className="group-hover">Ingeniero Químico</spam>, actualmente en busca de nuevos desafíos y equipos con la misión de revolucionar la forma en que el mundo contrata gracias a la inteligencia artificial (IA).</p>
+            <p className="eyebrow">Me apasiona resolver problemas y aplicar el pensamiento desde los primeros principios, siempre impulsado por un propósito y motivado por el reto de encontrar soluciones. Tengo una sólida base en <spam className="group-hover">JavaScript</spam>, <spam className="group-hover">Node.js</spam>, <spam className="group-hover">MongoDB</spam>, <spam className="group-hover">React</spam>, <spam className="group-hover">Next.js</spam>, <spam className="group-hover">SQL</spam>, <spam className="group-hover">Java</spam> y <spam className="group-hover">Python</spam>. He liderado equipos técnicos diversos abarcando Frontend, Backend y DevOps, construyendo productos escalables desde cero con el compromiso de generar un impacto positivo a través de la tecnología.</p>
+            <p className="eyebrow">Soy un explorador de nuevas tecnologías, un aprendiz constante y un solucionador de problemas de corazón. Cuando no estoy programando, probablemente me encuentres viendo videos sobre tecnología en YouTube, alimentando mi curiosidad.</p>
+            <p className="eyebrow">No dudes en conectarte conmigo <spam className="group-hover">samuelgiorno@gmail.com</spam> para hablar de tecnología…</p>
+            <p className="eyebrow"><b>Construyamos juntos el futuro de la tecnología.</b></p>
           </div>
         </section>
       )

@@ -27,9 +27,9 @@ export default function Footer() {
     return (
         <section id="projects" className="footer">
           <div className="footer-content">
-            <p className="footerText">Loosely designed in <b>Figma </b>and coded in <b>Visual Studio Code</b> by</p>
-            <p className="footerText">yours truly. Built with <b>Next.js</b> and <b>Tailwind CSS</b>, deployed with</p>
-            <p className="footerText"><b>Vercel</b>. All text is set in the <b>Inter</b> typeface.</p>
+            <p className="footerText">Diseñado en <b>Figma </b>y programado en <b>Visual Studio Code</b> por</p>
+            <p className="footerText">su servidor. Creado con <b>React.js</b> and <b>Scss</b>, implementado con</p>
+            <p className="footerText"><b>Vercel</b>. Todo el texto está con tipografía <b>Inter</b>.</p>
           </div>
         </section>
       )

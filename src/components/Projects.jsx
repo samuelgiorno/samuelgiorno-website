@@ -4,72 +4,59 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const experiences = [
+const projects = [
   {
-    role: 'Frontend Developer',
-    company: 'Tech Company',
-    companyUrl: 'https://example.com',
-    period: 'Enero 2022 - Presente',
+    project: 'MKBar (MakeUp) Studio',
+    projectUrl: 'https://github.com/samuelgiorno/MkbarStudio',
+    imageUrl: '/public/mkbarstudio.jpg',
     description: [
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
+      'Tienda online que ofrece una amplia gama de productos cosméticos y de belleza, incluye marcas de lujo, de farmacia y de parafarmacia, así como accesorios relacionados.'
     ]
   },
   {
-    role: 'Frontend Developer',
-    company: 'Tech Company',
-    companyUrl: 'https://example.com',
-    period: 'Enero 2022 - Presente',
+    project: 'Smart Recipe',
+    projectUrl: 'https://github.com/samuelgiorno/Final-Project-4Geeks',
+    imageUrl: '/public/mkbarstudio.jpg',
     description: [
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
+      'Proyecto Full Stack con integración de IA para generar recetas personalizadas, login, registro y dashboard con conexión a OpenAI GPT-4.'
     ]
   },
   {
-    role: 'Frontend Developer',
-    company: 'Tech Company',
-    companyUrl: 'https://example.com',
-    period: 'Enero 2022 - Presente',
+    project: 'MKBar (MakeUp) Studio',
+    projectUrl: 'https://github.com/samuelgiorno/MkbarStudio',
+    imageUrl: '/public/mkbarstudio.jpg',
     description: [
-      'Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.',
-    ]
-  },
-  {
-    role: 'Web Designer',
-    company: 'Creative Studio',
-    companyUrl: 'https://example.com',
-    period: 'Junio 2020 - Diciembre 2021',
-    description: [
-      'Diseñé experiencias visuales atractivas.',
-      'Implementé animaciones y microinteracciones.',
-      'Trabajé con clientes internacionales.'
+      'Tienda online que ofrece una amplia gama de productos cosméticos y de belleza, incluye marcas de lujo, de farmacia y de parafarmacia, así como accesorios relacionados.'
     ]
   }
 ]
 
-export default function Experience() {
+export default function Projects() {
   const sectionRef = useRef(null)
 
-  
-
   return (
-    <section id="projects" className="experience-section" ref={sectionRef}>
-      <h2 className="experience-title">Experiencia</h2>
-      <div className="experience-list">
-        {experiences.map((exp, index) => (
-          <div key={index} className="experience-item">
-            <div className="experience-header">
-              <h3>
-                {exp.role}{' '}
-                <span>·<a href={exp.companyUrl} target="_blank" rel="noopener noreferrer">{exp.company}</a></span>
-              </h3>
-              <p className="experience-period">{exp.period}</p>
+    <section id="projects" className="projects-section" ref={sectionRef}>
+      <h2 className="projects-title">Proyectos</h2>
+      <div className="projects-container">
+        {projects.map((proj, index) => (
+          <div className="project-item" key={index}>
+            <div className="project-image">
+              <img src={proj.imageUrl} alt={proj.project} />
             </div>
-            <p className="experience-description">{exp.description}</p>
+            <div className="project-content">
+              <h3 className="project-name">
+                <a href={proj.projectUrl} target="_blank" rel="noopener noreferrer">
+                  {proj.project}
+                </a>
+              </h3>
+              <ul className="project-description">
+                {proj.description.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
-      </div>
-
-      <div className="cv-button-wrapper">
-        <a href="/cv.pdf" download className="cv-button">Ver Resume completo</a>
       </div>
     </section>
   )
