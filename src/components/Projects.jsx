@@ -8,7 +8,7 @@ const projects = [
   {
     project: 'MKBar (MakeUp) Studio',
     projectUrl: 'https://github.com/samuelgiorno/MkbarStudio',
-    imageUrl: '/public/mkbarstudio.jpg',
+    imageUrl: '/mkbarstudio.jpg',
     description: [
       'Tienda online que ofrece una amplia gama de productos cosméticos y de belleza, incluye marcas de lujo, de farmacia y de parafarmacia, así como accesorios relacionados.'
     ]
@@ -16,7 +16,7 @@ const projects = [
   {
     project: 'Smart Recipe',
     projectUrl: 'https://github.com/samuelgiorno/Final-Project-4Geeks',
-    imageUrl: '/public/mkbarstudio.jpg',
+    imageUrl: '/mkbarstudio.jpg',
     description: [
       'Proyecto Full Stack con integración de IA para generar recetas personalizadas, login, registro y dashboard con conexión a OpenAI GPT-4.'
     ]
@@ -24,7 +24,7 @@ const projects = [
   {
     project: 'MKBar (MakeUp) Studio',
     projectUrl: 'https://github.com/samuelgiorno/MkbarStudio',
-    imageUrl: '/public/mkbarstudio.jpg',
+    imageUrl: '/mkbarstudio.jpg',
     description: [
       'Tienda online que ofrece una amplia gama de productos cosméticos y de belleza, incluye marcas de lujo, de farmacia y de parafarmacia, así como accesorios relacionados.'
     ]

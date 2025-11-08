@@ -26,6 +26,7 @@ export default function Hero() {
 
     return (
         <section id="hero" className="hero">
+          <h2  className="hero-title">Sobre mi</h2>
           <div className="hero-content">
             <p className="eyebrow">Soy <spam className="group-hover">Desarrollador Full Stack</spam>, <spam className="group-hover">Administrador de Bases de Datos (DBA)</spam> e <spam className="group-hover">Ingeniero Químico</spam>, actualmente en busca de nuevos desafíos y equipos con la misión de revolucionar la forma en que el mundo contrata gracias a la inteligencia artificial (IA).</p>
             <p className="eyebrow">Me apasiona resolver problemas y aplicar el pensamiento desde los primeros principios, siempre impulsado por un propósito y motivado por el reto de encontrar soluciones. Tengo una sólida base en <spam className="group-hover">JavaScript</spam>, <spam className="group-hover">Node.js</spam>, <spam className="group-hover">MongoDB</spam>, <spam className="group-hover">React</spam>, <spam className="group-hover">Next.js</spam>, <spam className="group-hover">SQL</spam>, <spam className="group-hover">Java</spam> y <spam className="group-hover">Python</spam>. He liderado equipos técnicos diversos abarcando Frontend, Backend y DevOps, construyendo productos escalables desde cero con el compromiso de generar un impacto positivo a través de la tecnología.</p>
