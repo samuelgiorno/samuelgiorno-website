@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import { gsap } from 'gsap'
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaMailBulk, FaGoogle } from 'react-icons/fa';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+import { FiMail } from 'react-icons/fi';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -10,10 +11,7 @@ export default function Navbar() {
   useEffect(() => {
     const links = Array.from(document.querySelectorAll('.nav-links a'))
     const sections = Array.from(document.querySelectorAll('section'))
-
     const hrefToId = (href) => (href || '').replace(/^#/, '').toLowerCase()
-
-    // Scroll suave al click
     const handleClick = (e) => {
       e.preventDefault()
       const href = e.currentTarget.getAttribute('href')
@@ -25,7 +23,6 @@ export default function Navbar() {
     }
     links.forEach(link => link.addEventListener('click', handleClick))
 
-    // Marca el link activo según la sección más visible
     let currentActive = null
     const observerOptions = {
       root: null,
@@ -97,6 +94,13 @@ export default function Navbar() {
   aria-label="Instagram"
   >
     <FaInstagram />
+  </a>
+  <a href="mailto:samuelgiorno@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Mail"
+  >
+    <FiMail />
   </a>
 </div>
     </div>
