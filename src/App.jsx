@@ -31,10 +31,10 @@ export default function App() {
         <Navbar/>
       </aside>
       <main className='content'>
-        <Hero/>
-        <Experience/>
-        <Projects/>
-        <Footer/>
+        <section id="hero"><Hero /></section>
+        <section id="experience"><Experience /></section>
+        <section id="projects"><Projects /></section>
+        <section id="footer"><Footer /></section>
       </main>
     </div>
 
